@@ -5,19 +5,16 @@
     -->
 	<div class="row">
         <div class="title #hide_name#">
-            <div class="cmdName">#name_display#</div>
+            <div class="cmdName" style="#hideCmdName#">#name_display#</div>
         </div>
         <div class="content-sm ">
             <span class="iconCmd#id#"></span>
-        </div>
-        <div style="font-weight: bold;font-size : 10px;">
-            <span class="timeCmd#id#" ></span>
         </div>
         <div class="value">
             <span class="value#id# timeCmd label label-default value"></span>
         </div>
         <!-- Historique -->
-            <div class="cmdStats #hide_history#" style="#displayHistory# font-size : 10px;margin-top:0px;">
+            <div class="cmdStats #hide_history#" style="#displayHistory# font-size : 10px;">
                 <span title="Min" class="tooltips">#minHistoryValue#</span>|<span title="Moy" class="tooltips">#averageHistoryValue#</span>|<span title="Max" class="tooltips">#maxHistoryValue#</span> <i class="#tendance#"></i>
         </div>
     </div>
@@ -26,7 +23,7 @@
             // Options de personnalisation avec valeur par defaut
                 // Paramètre "sizehw" : à déclarer en pixels - 80 maxi
                     var srcImgHeight    = (is_numeric('#sizeh#')) ? parseFloat('#sizeh#') : 100;
-                    var srcImgWidth     = (is_numeric('#sizew#')) ? parseFloat('#sizew#') : 100;
+                    var srcImgWidth     = (is_numeric('#sizew#')) ? parseFloat('#sizew#') : 110;
                 // Paramétrage Niveau
                     var level_1         = (is_numeric('#level_1#')) ? parseFloat('#level_1#') : 20;
                     var level_2         = (is_numeric('#level_2#')) ? parseFloat('#level_2#') : 100.0;
